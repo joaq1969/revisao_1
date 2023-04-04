@@ -4,9 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>revisao</title>
+    <title>Revisão de HTML CSS e JavaScript</title>
+<link rel="stylesheet" href="estilo.css">
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+  </style>
 <body>
+
+    <button onclick="Apagar();"> De novo </button>
+    
+    <div class="tabuleiro">
+        <div class="linha">
+            <div onclick="Mostrar(1);" id="d1" class="celula"></div>
+            <div onclick="Mostrar(2);" id="d2" class="celula"></div>
+            <div onclick="Mostrar(3);" id="d3" class="celula"></div>
+        </div>
+        <div class="linha">
+            <div onclick="Mostrar(4);" id="d4" class="celula"></div>
+            <div onclick="Mostrar(5);" id="d5" class="celula"></div>
+            <div onclick="Mostrar(6);" id="d6" class="celula"></div>
+        </div>
+        <div class="linha">
+            <div onclick="Mostrar(7);" id="d7" class="celula"></div>
+            <div onclick="Mostrar(8);" id="d8" class="celula"></div>
+            <div onclick="Mostrar(9);" id="d9" class="celula"></div>
+        </div>
+           
+    </div>
+    
+
+
+
+
     
 </body>
+
+<script>
+    function Apagar()
+    {
+
+        d1.innerHTML = " "
+        d2.innerHTML = " "
+        d3.innerHTML = " "
+        d4.innerHTML = " "
+        d5.innerHTML = " "
+        d6.innerHTML = " "
+        d7.innerHTML = " "
+        d8.innerHTML = " "
+        d9.innerHTML = " "
+        cliques = 0
+
+
+
+
+    }
+    cliques = 0;
+    function Mostrar(qual)
+    {
+      cliques = cliques + 1
+       
+      if(qual == 1)
+        {
+            if(cliques == 1)
+            {
+                d1.innerHTML = "X"
+            }
+            else
+            {
+                d1.innerHTML = "O"  
+                cliques = 0
+            }
+           
+        }
+        if(qual == 2)
+        {
+            if(cliques == 1)
+            {
+                d2.innerHTML = "X"
+            }
+            else
+            {
+                d2.innerHTML = "O"   
+                cliques = 0
+            }
+        }
+        if(qual == 3)
+        {
+            if(cliques == 1)
+            {
+                d3.innerHTML = "X"
+            }
+            else
+            {
+                d3.innerHTML = "O"   
+                cliques = 0
+            }
+        }
+        if(qual == 4)
+        {
+            if(cliques == 1)
+            {
+                d4.innerHTML = "X"
+            }
+            else
+            {
+                d4.innerHTML = "O"  
+                cliques = 0
+            }
+        }
+        if(qual == 5)
+        {
+            if(cliques == 1)
+            {
+                d5.innerHTML = "X"
+            }
+            else
+            {
+                d5.innerHTML = "O"  
+                cliques = 0
+        }
+    }
+        if(qual == 6)
+        {
+            if(cliques == 1)
+            {
+                d6.innerHTML = "X"
+            }
+            else
+            {
+                d6.innerHTML = "O"  
+                cliques = 0 
+        }
+    }
+        if(qual == 7)
+        {
+            if(cliques == 1)
+            {
+                d7.innerHTML = "X"
+            }
+            else
+            {
+                d7.innerHTML = "O"  
+                cliques = 0
+        }
+        }
+        if(qual == 8)
+        {
+            if(cliques == 1)
+            {
+                d8.innerHTML = "X"
+            }
+            else
+            {
+                d8.innerHTML = "O"  
+                cliques = 0
+        }
+        }
+        if(qual == 9)
+        {
+            if(cliques == 1)
+            {
+                d9.innerHTML = "X"
+            }
+            else
+            {
+                d9.innerHTML = "O"  
+                cliques = 0
+            }
+        }
+
+
+    }
+
+    
+
+</script>
+
 </html>

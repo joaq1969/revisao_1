@@ -1,0 +1,58 @@
+
+        body
+        {
+
+            background-color: cyan;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            margin: 0px;
+
+        }
+
+
+
+    .tabuleiro
+    {
+        background-image: linear-gradient(0deg,lightskyblue, blue);
+        border-color: lightskyblue;
+        width: 600px;
+        height: 600px;
+        border-style: outset;
+        flex-direction: column;
+        justify-content: space-around;
+        display: flex;
+
+    }
+    .linha
+    {
+
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: row; /* Em linha  */
+        justify-content: space-around; /* Mesma distancia */
+    
+    }
+    .celula
+    {
+        cursor: pointer;
+        width: 150px;
+        height: 150px;
+        background-color: azure;
+        box-shadow: 1px 1px black;
+        font-size: 120px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        font-family: 'Nunito', sans-serif;
+
+    }
